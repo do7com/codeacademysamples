@@ -1,0 +1,20 @@
+/*jshint multistr:true
+Text and phrase finding code based on Codeacademy examples */
+
+text = "TEXT TEXT TEXT TEXT TEXT TEXT JORDAN TEXT TEXT TEXT TEXT TEXT JORDAN TEXT TEXT TEXT"
+myName ="Jordan"
+hits = []
+for (var i = 0; i < text.length; i++){
+    
+    if (text[i] === myName[0]){
+    
+    for (var j = i; j < i + myName.length; j++){
+        hits.push(text[j]);
+    }  
+    }
+}
+if (hits.push(text[j]) === 0) {
+    return "Your name wasn't found!";
+} else {
+    console.log(hits);
+}
